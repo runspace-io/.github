@@ -1,24 +1,30 @@
-# Runspace
+<p align="center">
+  <img src="https://raw.githubusercontent.com/runspace-io/runspace/main/apps/web/public/brand/runspace-wordmark.svg" alt="Runspace" width="400" />
+</p>
 
-**Open-source engineering workspace — humans and AI agents collaborate on Git repositories through chat, terminal, diffs, and pull requests.**
-
-[![Website](https://img.shields.io/badge/website-runspace.io-blue)](https://runspace.io)
-[![License](https://img.shields.io/badge/license-MIT-green)](https://github.com/runspace-io/runspace/blob/main/LICENSE)
+<p align="center">
+  <a href="https://runspace.io"><img src="https://img.shields.io/badge/website-runspace.io-blue" alt="Website" /></a>
+  <a href="https://github.com/runspace-io/runspace/blob/main/LICENSE"><img src="https://img.shields.io/badge/license-MIT-green" alt="License: MIT" /></a>
+</p>
 
 ---
 
-Runspace is a shared engineering workspace where AI agents behave like collaborators rather than detached chatbots. A developer gives an agent a task in the context of a repository, watches the work happen in real-time, intervenes when needed, reviews the resulting changes, and publishes them as a pull request — all without leaving the workspace.
+AI agents shouldn't feel like detached chatbots. Runspace gives every AI agent
+its own sandboxed environment while keeping you in the loop through a shared
+realtime timeline, terminal, diffs, and pull requests — all on your own
+infrastructure.
 
-### What makes Runspace different
+## Features
 
-- **Live collaboration timeline** — agent messages, logs, and file changes stream into the UI as they happen
-- **Repository-native** — works with GitHub repos, local folders, and Git mirrors
-- **Sandboxed execution** — agents run in isolated Docker containers with bounded file access
+- **Sandboxed agents** — each agent runs in an isolated Docker container with bounded file access
+- **Live timeline** — agent messages, logs, and file changes stream in realtime as they happen
 - **Built-in code review** — inspect diffs with Monaco editor and open PRs directly
-- **Multi-resource channels** — attach multiple repos and folders to the same conversation
-- **Host integration** — connect local folders without uploading, via a loopback agent
+- **Multi-resource channels** — attach multiple repos and local folders to the same conversation
+- **Host integration** — connect local folders without uploading, via a loopback Host Agent
+- **Git-native** — branches, changes, commits, and PR publishing without leaving the workspace
+- **Self-hosted** — MIT licensed, runs on your own infrastructure with Docker Compose
 
-### Quick start
+## Quick start
 
 ```bash
 git clone https://github.com/runspace-io/runspace.git
@@ -29,25 +35,25 @@ docker compose up -d --build
 
 Open `http://localhost:3000` and sign in with `admin` / `admin`.
 
-### Repositories
+## Repositories
 
 | Repo | Description |
 |------|-------------|
 | [runspace](https://github.com/runspace-io/runspace) | Core workspace — Go gateway, Next.js web app, agent runtime |
 | [.github](https://github.com/runspace-io/.github) | Organization profile and community health files |
 
-### Tech stack
+## Stack
 
-**Backend** — Go, PostgreSQL, NATS, Docker  
-**Frontend** — TypeScript, Next.js, Monaco Editor, xterm.js  
-**Infrastructure** — Docker Compose, Traefik  
+| Layer | Technology |
+|-------|------------|
+| Frontend | Next.js, TypeScript, Monaco Editor, xterm.js |
+| Gateway | Go, NATS, WebSocket |
+| Persistence | PostgreSQL |
+| Runtime | Docker (isolated per-agent containers) |
 
-### Links
+## Links
 
 - [Website](https://runspace.io)
-- [Documentation](https://github.com/runspace-io/runspace/tree/main/docs)
-- [Product specification](https://github.com/runspace-io/runspace/blob/main/docs/mvp/PRODUCT_SPEC.md)
-
----
-
-Built in Bangladesh. Open source under the MIT License.
+- [Contributing](https://github.com/runspace-io/runspace/blob/main/CONTRIBUTING.md)
+- [Security policy](https://github.com/runspace-io/runspace/blob/main/SECURITY.md)
+- [Code of conduct](https://github.com/runspace-io/runspace/blob/main/CODE_OF_CONDUCT.md)
