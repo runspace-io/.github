@@ -9,20 +9,21 @@
 
 ---
 
-AI agents shouldn't feel like detached chatbots. Runspace gives every AI agent
-its own sandboxed environment while keeping you in the loop through a shared
-realtime timeline, terminal, diffs, and pull requests — all on your own
-infrastructure.
+Runspace is collaborative intelligence for software engineering. Not an AI that
+replaces you, and not a chatbot you ping from the sidelines. You and the agent
+share a realtime workspace — terminal, diffs, pull requests, and a live timeline
+where you see every decision as it happens. You bring intent. The agent brings
+speed. Together you ship.
 
 ## Features
 
-- **Sandboxed agents** — each agent runs in an isolated Docker container with bounded file access
-- **Live timeline** — agent messages, logs, and file changes stream in realtime as they happen
-- **Built-in code review** — inspect diffs with Monaco editor and open PRs directly
-- **Multi-resource channels** — attach multiple repos and local folders to the same conversation
-- **Host integration** — connect local folders without uploading, via a loopback Host Agent
-- **Git-native** — branches, changes, commits, and PR publishing without leaving the workspace
-- **Self-hosted** — MIT licensed, runs on your own infrastructure with Docker Compose
+- **Sandboxed agents** run in isolated Docker containers with bounded file access
+- **Live timeline** streams agent messages, logs, and file changes in realtime
+- **Built-in code review** with Monaco diff viewer and direct PR creation
+- **Multi-resource channels** let you attach repos and local folders to the same conversation
+- **Host integration** connects local folders without uploading, via a loopback agent
+- **Git-native** branches, changes, commits, and PR publishing without leaving the workspace
+- **Self-hosted** under the MIT license, runs on your own infrastructure with Docker Compose
 
 ## Quick start
 
